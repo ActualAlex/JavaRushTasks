@@ -20,8 +20,11 @@ public class Solution {
 
 
     public static HashMap<String, Cat> addCatsToMap(String[] cats) {
-        //напишите тут ваш код
-
+        HashMap<String, Cat> stringCatHashMap = new HashMap<String, Cat>();
+        for (String name: cats) {
+            stringCatHashMap.put(name, new Cat(name));//напишите тут ваш код
+        }
+    return stringCatHashMap;
     }
 
 
