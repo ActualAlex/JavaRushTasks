@@ -1,6 +1,7 @@
 package com.javarush.task.task08.task0814;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /* 
@@ -9,24 +10,24 @@ import java.util.Set;
 
 public class Solution {
     public static HashSet<Integer> createSet() {
-        HashSet<Integer> set = new HashSet<>();//напишите тут ваш код
-        for (int i = 0; i<20; i++){
-            set.add(i);
+        HashSet<Integer> set = new HashSet<Integer>();
+        for (int i = 0; i < 20; i++){
+            set.add(i);//напишите тут ваш код
         }
         return set;
     }
 
     public static HashSet<Integer> removeAllNumbersMoreThan10(HashSet<Integer> set) {
+        Iterator<Integer> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            int i = iterator.next();
 
-        for (int i :set){
-
-            if ( )
-                //напишите тут ваш код
+            if (i>10) iterator.remove();
         }
+        return set;
 
     }
 
     public static void main(String[] args) {
-
     }
 }
