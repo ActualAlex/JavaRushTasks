@@ -1,5 +1,7 @@
 package com.javarush.task.task08.task0826;
 
+import com.sun.deploy.util.ArrayUtil;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -17,7 +19,6 @@ public class Solution {
         for (int i = 0; i < array.length; i++) {
             array[i] = Integer.parseInt(reader.readLine());
         }
-
         sort(array);
 
         System.out.println(array[0]);
