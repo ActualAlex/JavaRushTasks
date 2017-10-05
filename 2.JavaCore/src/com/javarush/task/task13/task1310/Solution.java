@@ -4,7 +4,7 @@ package com.javarush.task.task13.task1310;
 Это кто там такой умный?
 */
 
-import javax.xml.soap.SOAPElementFactory;
+
 
 public class Solution {
     public static void main(String[] args) throws Exception {
